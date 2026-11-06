@@ -1,0 +1,25 @@
+{
+  "name": "orb-qqq-paper-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TypeScript opening range breakout simulator with Alpaca market data, historical replay, and a ledger-based filter.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "scan": "tsx src/index.ts scan",
+    "replay:raw": "tsx src/index.ts replay:raw",
+    "replay:memory": "tsx src/index.ts replay:memory",
+    "memory:reset": "tsx src/index.ts memory:reset",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
